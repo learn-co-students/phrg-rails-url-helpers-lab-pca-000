@@ -1,0 +1,5 @@
+<%=if activate_student_path(@student)%>
+  <%=@student.active == true%>
+<%=elsif activate_student_path(@student) && @student.active = true%>
+  <%=@student.active == false%>
+<%end%>
